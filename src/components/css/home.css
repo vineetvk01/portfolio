@@ -1,0 +1,108 @@
+
+.box{
+    height: 90vh;
+    width: 96vw;
+    margin: 2vh 2vw;
+    border: 1px solid #fff;
+    border-radius: 1%;
+    overflow: hidden;
+    animation: stretch 1s ease-out 0s;
+    -webkit-animation: stretch 1s ease-out 0s;
+}
+
+@keyframes stretch {
+    0% {
+      transform: scale(.8);
+    }
+    100% {
+        transform: scale(1);
+    }
+  }
+
+@-webkit-keyframes stretch {
+    0% {
+      transform: scale(.8);
+    }
+    100% {
+        transform: scale(1);
+    }
+  }
+
+#welcome h1{
+    font-size: 25vh;
+    font-weight: 900;
+    color: black;
+    text-align: left;
+    position: relative;
+    left: 32vw;
+    top: 20vh;
+}
+
+#coloumn1{
+    width:50%;
+    float:left;
+    height: inherit;
+    overflow:visible;
+    background: #cb2d3e;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ef473a, #cb2d3e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ef473a, #cb2d3e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#coloumn2{
+    width:45%;
+    float:left;
+    height: inherit;
+    overflow:hidden;
+    background: seashell;
+}
+
+#coloumn3{
+    width:5%;
+    float:left;
+    height: inherit;
+    overflow:hidden;
+    font-size: 2em;
+    background: seashell;
+    padding: 30vh 0;
+}
+
+#scrollMe{
+    position: relative;
+    margin-top: 70vh;
+}
+
+#arrowDown{
+    margin-top: 2vh;
+    animation: jump 2s infinite ease-in-out;
+    -webkit-animation: jump 1s infinite ease-in;
+}
+
+@-webkit-keyframes jump {
+    0% {margin-top: 2vh;}
+    50% {margin-top: 5vh;}
+    100% {margin-top: 2vh; }
+}
+  
+@keyframes jump {
+    from {margin-top: 2vh;}
+    to {margin-top: 4vh; }
+}
+
+/* Orientation Texts classes */
+
+.vertical{
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    margin-left: 1vw;
+}
+
+/* Colored Texts classes */
+
+.whiteText{
+    color: whitesmoke;
+}
+
+.redText{
+    color:red;
+    font-size: 20vh;
+}

@@ -1,0 +1,26 @@
+header h2{
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 2vh 2vw;
+    animation: slide 1s ease-out 0s;
+    -webkit-animation: slide 0.5s ease-out 0s;
+}
+
+@keyframes slide {
+    0% {
+      opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+      }
+      100% {
+          opacity: 1;
+      }
+}

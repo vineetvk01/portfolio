@@ -1,0 +1,38 @@
+nav{
+    position: fixed;
+    overflow: hidden;
+    font-size: 2em;
+    margin-top: 40vh;
+    margin-left: 1vw;
+    z-index: 100;
+    animation: slide 1s ease-out 0s;
+    -webkit-animation: slide 1s ease-out 0s;
+    transition: 0.3s;
+}
+
+nav:hover{
+    transform: scale(1.2);
+    transform: rotate(10deg);
+}
+
+@keyframes slide {
+    0% {
+      transform: scale(.8);
+      margin-left:-10vh;
+    }
+    100% {
+        transform: scale(1);
+        margin-left: 1vw;
+    }
+}
+
+@-webkit-keyframes slide {
+    0% {
+      transform: scale(.8);
+      margin-left:-10vh;
+    }
+    100% {
+        transform: scale(1);
+        margin-left: 1vw;
+    }
+}
