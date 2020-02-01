@@ -1,13 +1,13 @@
 header h2{
-    font-size: 20px;
+    font-size: 3vh;
     font-weight: bold;
     text-transform: uppercase;
     margin: 2vh 2vw;
-    animation: slide 1s ease-out 0s;
-    -webkit-animation: slide 0.5s ease-out 0s;
+    animation: fadeout 1s ease-out 0s;
+    -webkit-animation: fadeout 0.5s ease-out;
 }
 
-@keyframes slide {
+@keyframes fadeout {
     0% {
       opacity: 0;
     }
@@ -16,7 +16,7 @@ header h2{
     }
 }
 
-@-webkit-keyframes slide {
+@-webkit-keyframes fadeout {
     0% {
         opacity: 0;
       }

@@ -1,20 +1,24 @@
 import React from 'react';
 
+import './App.css';
+
 import Home from './components/Home'
 import Navigation from './components/Navigation';
 import Header from './components/Header';
-
-import './App.css';
+import SocialMedia from './components/SocialMedia';
+import Projects from './components/Projects';
+import ContactMe from './components/ContactMe';
 
 function App() {
   return (
     <div className="App">
-      <Header/>
+      <Header />
+      <Navigation />
+      <SocialMedia />
       <main>
-        <Navigation />
         <Home />
-        <Home />
-        <Home />
+        <Projects />
+        <ContactMe />
       </main>
 
     </div>

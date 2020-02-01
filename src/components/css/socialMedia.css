@@ -1,0 +1,71 @@
+#sideBar{
+    position: fixed;
+    margin-top: 25vh;
+    overflow: visible;
+    z-index: 100;
+    right:3vw;
+}
+
+.icon{
+    position: relative;
+    font-size: 2em;
+    overflow: visible;
+    z-index: 100;
+    animation: slideFromRight 1s ease-out 0s;
+    -webkit-animation: slideFromRight 1s ease-out 0s;
+    transition: 1s;
+    
+}
+
+.icon:hover{
+    transform: rotate(15deg);
+}
+
+
+/* Ids In Order of social media on screen*/
+
+#linkedIn{
+    color: #0e76a8;
+}
+#gitHub{
+    animation-delay: 0.1s;
+    color: #333;
+}
+#medium{
+    animation-delay: 0.2s;
+}
+#facebook{
+    animation-delay: 0.3s;
+    color: #3b5998;
+}
+#instagram{
+    animation-delay: 0.4s;
+    color: #fe4164; 
+}
+#twitter{
+    animation-delay: 0.5s;
+    color:#00acee
+}
+
+
+@keyframes slideFromRight {
+    0% {
+      right:-10vh;
+      opacity: 0;
+    }
+    100% {
+        right:0;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes slideFromRight {
+    0% {
+        right:-10vh;
+        opacity: 0;
+      }
+      100% {
+          right:0;
+          opacity: 1;
+      }
+    }

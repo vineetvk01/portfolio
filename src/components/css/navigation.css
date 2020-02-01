@@ -12,7 +12,8 @@ nav{
 
 nav:hover{
     transform: scale(1.2);
-    transform: rotate(10deg);
+    transform: rotate(15deg);
+    background-color: seashell;
 }
 
 @keyframes slide {

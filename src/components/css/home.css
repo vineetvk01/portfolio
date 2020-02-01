@@ -7,12 +7,12 @@
     border-radius: 1%;
     overflow: hidden;
     animation: stretch 1s ease-out 0s;
-    -webkit-animation: stretch 1s ease-out 0s;
+    -webkit-animation: stretch 0.5s ease-out;
 }
 
 @keyframes stretch {
     0% {
-      transform: scale(.8);
+      transform: scale(.9);
     }
     100% {
         transform: scale(1);
@@ -36,6 +36,8 @@
     position: relative;
     left: 32vw;
     top: 20vh;
+    opacity: 0.9;
+    text-shadow: 5px 0px #999;
 }
 
 #coloumn1{
@@ -46,34 +48,49 @@
     background: #cb2d3e;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #ef473a, #cb2d3e);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #ef473a, #cb2d3e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    animation: unhide 1s ease-out;
+    -webkit-animation: unhide 1s ease-out;
+}
+
+@keyframes unhide {
+    0% {
+        width:100vw;
+        height: 100vh;
+    }
+    100% { 
+        width:50%;
+    }
 }
 
 #coloumn2{
-    width:45%;
+    width:50%;
     float:left;
     height: inherit;
     overflow:hidden;
     background: seashell;
-}
-
-#coloumn3{
-    width:5%;
-    float:left;
-    height: inherit;
-    overflow:hidden;
-    font-size: 2em;
-    background: seashell;
-    padding: 30vh 0;
 }
 
 #scrollMe{
+    opacity: 1;
     position: relative;
     margin-top: 70vh;
+    animation: fadeIn 1s linear 2s;
+    -webkit-animation: fadeIn 1s linear 0.5s;
 }
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+ } 
+
+ @-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+ } 
 
 #arrowDown{
     margin-top: 2vh;
-    animation: jump 2s infinite ease-in-out;
+    animation: jump 1s infinite ease-in-out;
     -webkit-animation: jump 1s infinite ease-in;
 }
 
@@ -84,8 +101,9 @@
 }
   
 @keyframes jump {
-    from {margin-top: 2vh;}
-    to {margin-top: 4vh; }
+    0% {margin-top: 2vh;}
+    50% {margin-top: 5vh;}
+    100% {margin-top: 2vh; }
 }
 
 /* Orientation Texts classes */
@@ -95,6 +113,37 @@
     text-orientation: mixed;
     margin-left: 1vw;
 }
+
+/* HELLO Text */
+
+#h, #l2{
+    /* font-size: 1px; */
+    text-overflow: clip;
+    overflow: hidden;
+    float:left;
+    /* animation: loadText 0.4s ease-out; */
+}
+
+#l1{
+    /* font-size: 1px; */
+    text-overflow: clip;
+    overflow: hidden;
+    float:left;
+    /* animation: loadText 0.4s ease-out; */
+}
+
+@-webkit-keyframes loadText {
+    from {height: 1px;}
+    to {height: 1em;}
+}
+  
+@keyframes loadText {
+    from {height: 1px;}
+    to {height: 1em;}
+            
+}
+
+
 
 /* Colored Texts classes */
 
