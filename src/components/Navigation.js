@@ -8,5 +8,5 @@ import { faBars } from '@fortawesome/free-solid-svg-icons'
 const Bars = <FontAwesomeIcon icon={faBars} />
 
 export default function Navigation(){
-    return <nav>{Bars}</nav>
+    return <div id="nav"><nav>{Bars}</nav></div>
 }

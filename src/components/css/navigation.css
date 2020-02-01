@@ -10,10 +10,20 @@ nav{
     transition: 0.3s;
 }
 
+#nav{
+    position: fixed;
+    height: 100vh;
+    width: 1vw;
+    background-color: #fff;
+    transition: 0.3s;
+}
+
+#nav:hover{
+    width: 3vw;
+}
+
 nav:hover{
-    transform: scale(1.2);
     transform: rotate(15deg);
-    background-color: seashell;
 }
 
 @keyframes slide {
