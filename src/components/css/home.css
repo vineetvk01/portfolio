@@ -1,3 +1,9 @@
+#manager{
+    height: 90vh;
+    width: 96vh;
+    padding: 0;
+    margin: 0;
+}
 
 .box{
     height: 90vh;
@@ -31,25 +37,49 @@
 #welcome h1{
     font-size: 25vh;
     font-weight: 900;
-    color: black;
     text-align: left;
     position: relative;
-    left: 32vw;
-    top: 20vh;
-    opacity: 0.9;
+    left: 36vw;
+    top: 15vh;
+    opacity: 0.8;
     text-shadow: 5px 0px #999;
+}
+
+#Message{
+    position: absolute;
+}
+
+.about{
+    font-size: 1.5em;
+    font-weight: 800;
+    position: absolute;
+    left: 50vw;
+    top: 20vh;
+    color: #ff4000;
+    overflow: visible;
+}
+
+#laptopScreen{
+    position:absolute;
+    margin: 1%;
+}
+
+#laptopScreen img{
+    width: 90vw;
+    height: 95vh;
 }
 
 #coloumn1{
     width:50%;
     float:left;
-    height: inherit;
+    height: 96vh;
     overflow:visible;
     background: #cb2d3e;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #ef473a, #cb2d3e);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #ef473a, #cb2d3e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     animation: unhide 1s ease-out;
     -webkit-animation: unhide 1s ease-out;
+    z-index: 50;
 }
 
 @keyframes unhide {
@@ -65,9 +95,10 @@
 #coloumn2{
     width:50%;
     float:left;
-    height: inherit;
+    height: 96vh;
     overflow:hidden;
     background: seashell;
+    z-index: 10;
 }
 
 #scrollMe{
@@ -119,7 +150,7 @@
 #h, #l2{
     /* font-size: 1px; */
     text-overflow: clip;
-    overflow: hidden;
+    overflow: visible;
     float:left;
     /* animation: loadText 0.4s ease-out; */
 }
@@ -143,8 +174,6 @@
             
 }
 
-
-
 /* Colored Texts classes */
 
 .whiteText{
@@ -155,3 +184,16 @@
     color:red;
     font-size: 20vh;
 }
+
+/* On screens that are 600px wide or less, the background color is olive */
+@media screen and (max-width: 600px) {
+    #welcome h1{
+        font-size: 14vh;
+        font-weight: 500;
+        left: 20vw;
+    }
+
+    .redText{
+        font-size: 10vh;
+    }
+  }

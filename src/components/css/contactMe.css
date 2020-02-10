@@ -1,5 +1,5 @@
 #contactMe{
-    background-color: seashell;
+    background-color: #fff;
 }
 
 #contactMe h1{
@@ -7,4 +7,41 @@
     font-size: 1.5em;
     margin-left: 5vw;
     margin-top: 5vh;  
+}
+
+.formContainer{
+    float: left;
+    width: 50vw;
+    margin:5%;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 1% 0;
+}
+
+input[type=submit] {
+    background-color: #ff4000;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+  
+input[type=submit]:hover {
+  background-color: #ff0800;
+}
+
+#messageWrite{
+    position: absolute;
+    width: 20%;
+    margin-top: 40vh;
+    margin-left: 5vw;
 }

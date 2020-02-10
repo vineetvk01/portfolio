@@ -1,0 +1,25 @@
+#skills{
+    height: 100vh;
+    background-color: chartreuse;
+}
+
+#mobileIcon{
+  position: absolute;
+  font-size: 15vh;
+  top: 10vh;
+  left: 20vw;
+}
+
+#laptopIcon{
+  position: relative;
+  width: 100vw;
+  left: 41%;
+}
+
+#tableStand{
+  position: absolute;
+  background-color: brown;
+  width: 100vw;
+  top: 90vh;
+  height: 20vh;
+}

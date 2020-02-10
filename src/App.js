@@ -7,22 +7,33 @@ import Navigation from './components/Navigation';
 import Header from './components/Header';
 import SocialMedia from './components/SocialMedia';
 import Projects from './components/Projects';
+import Experience from './components/Experience';
+import Skills from './components/Skills';
 import ContactMe from './components/ContactMe';
 
-function App() {
-  return (
-    <div className="App">
-      <Header />
-      <Navigation />
-      <SocialMedia />
-      <main>
-        <Home />
-        <Projects />
-        <ContactMe />
-      </main>
 
-    </div>
-  );
+class App extends React.Component {
+
+  componentDidMount() {
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <Header />
+        <Navigation />
+        <SocialMedia />
+        <main>
+          <Home />
+          <Experience />
+          <Projects />
+          {/* <Skills /> */}
+          <ContactMe />
+        </main>
+
+      </div>
+    );
+  }
 }
 
 export default App;

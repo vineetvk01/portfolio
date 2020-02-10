@@ -1,10 +1,28 @@
-#projects{
-    background-color: seashell;
+.language{
+    width: 50px;
+    height: 50px;
+    margin:4px;
+    float: left;
 }
 
-#projects h1{
-    text-transform: uppercase;
+.projectName{
     font-size: 1.5em;
-    margin-left: 5vw;
-    margin-top: 5vh;  
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.projectInfo{
+    line-height: 2;
+    font-size: 1.3em;
+    margin: 5% 0 0 2%;
+}
+
+#project1{
+    float:left;
+    width: 80vw;
+}
+
+#project2{
+    float:left;
+    width: 80vw;
 }
