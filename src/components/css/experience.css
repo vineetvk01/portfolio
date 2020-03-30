@@ -9,30 +9,61 @@
 }
 
 .head{
-    padding: absolute;
+    position: absolute;
+    padding-top: 2vh;
     font-size: 2em;
     margin-left: 10vw;
 }
 
 .experience{
     position: absolute;
-    width: 180vw;
+    width: 270vw;
     height: 80vh;
     top: 10vh;
     left: 10vw;
-    background-color: #fff;
+    background-color: #999;
     opacity: 1;
-    border: 1px solid #fff;
-    border-radius: 10%;
-}
-
-.div{
-    float: left;
 }
 
 #company1{
+    background-color: aqua;
+    float: left;
+    width: 80vw;
+    margin-right:10vw;
+}
+
+#company2{
+    background-color: orange;
+    margin-right:10vw;
     float:left;
     width: 80vw;
+}
+
+#company3{
+    background-color: silver;
+    margin-right:10vw;
+    float:left;
+    width: 80vw;
+}
+
+.companyLogo{
+    height: 50px;
+    margin: 50px 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .companyLogo{
+        height: 50px;
+        margin: 30px 0;
+    }
+}
+
+.experience .gifs img{
+    width: 500px;
+    height: 300px;
+    margin: 0 10px;
+    box-shadow: 10px 5px 5px #666;
+    float: left;
 }
 
 #space{
@@ -43,25 +74,13 @@
     text-align: center;
 }
 
-#company2{
-    float:left;
-    width: 80vw;
-}
 
-.experience .gifs{
-    width: 40vw;
-    height: 40vh;
-    margin: 15% 5%;
-    box-shadow: 10px 5px 5px #666;
-    float: left;
-}
 
-.experience .companyLogo{
-    width: 400px;
-    margin-top: 5%;
+.experience .content{
+    display: none;;
 }
-
 .experience .companyInfo{
+    display: none;
     margin: 5% 0 0 1%;
     padding: 0;
     font-weight: 600;

@@ -8,13 +8,20 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons'
 
 export default class Home extends React.Component {
+    
     render() {
         const ArrowDown = <FontAwesomeIcon icon={faArrowDown} />
+        const screenWidth = window.screen.width;
+        let src = './images/laptop_console.png';
+        if(screenWidth < 700){
+            src = './images/ipad_console.png';
+        }
         return (
+            <div>
             <Controller>
                 <Scene
                     triggerHook="onLeave"
-                    duration="3000"
+                    duration="2000"
                     pin
                 >
                     <Timeline
@@ -25,9 +32,7 @@ export default class Home extends React.Component {
                             to={{ x: '85%' }}
                         >
                             <div>
-                                <div id="coloumn1">
-
-                                </div>
+                                <div id="coloumn1" />
                                 <div id="coloumn2">
                                     <p id="scrollMe" className="vertical">SCROLL</p>
                                     <p id="arrowDown" className="vertical">{ArrowDown}</p>
@@ -39,7 +44,7 @@ export default class Home extends React.Component {
                             to={{ css: { opacity: "1" } }}
                         >
                             <div id="laptopScreen">
-                                <img src="./images/laptop_console.png" alt="laptop" />
+                                <img src={src} alt="laptop" />
                             </div>
                         </Tween>
                         <Timeline
@@ -54,7 +59,6 @@ export default class Home extends React.Component {
                                 from={{ css: { transform: "scale(0.9)", color: "#000", marginLeft: "0" } }}
                                 to={{ css: { transform: "scale(0.6)", color: "#fff", marginLeft: "-10%" } }}
                             />
-                            <Tween />
                         </Timeline>
                         <Timeline
                             target={
@@ -98,6 +102,7 @@ export default class Home extends React.Component {
                     </Timeline>
                 </Scene>
             </Controller>
+            </div>
         )
     }
 }

@@ -6,7 +6,7 @@ import './css/projects.css'
 
 export default function Projects() {
     return (
-        <React.Fragment>
+        <div>
             <Controller>
                 <Scene
                     triggerHook="onLeave"
@@ -57,6 +57,6 @@ export default function Projects() {
                     </Timeline>
                 </Scene>
             </Controller>
-        </React.Fragment>
+        </div>
     )
 }
