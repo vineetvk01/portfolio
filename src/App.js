@@ -18,7 +18,6 @@ class App extends React.Component {
     const screenWidth = window.screen.width;
     return (
       <div className="App">
-
         <Header />
         <Navigation />
         {screenWidth > 768 ? <SocialMedia /> :''}

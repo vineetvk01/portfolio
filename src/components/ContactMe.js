@@ -27,8 +27,8 @@ export default function ContactMe() {
             </div>
             <img id="messageWrite" src="./images/notes.svg" />
             {screenWidth < 768 ? (<div class="social-media-list">
-                <div id="linkedIn">{linkedIn}</div>
-                <div id="gitHub">{gitHub}</div>
+            <a href="https://www.linkedin.com/in/vineetsrivastav/" target="_blank" rel="noopener noreferrer"><div id="linkedIn">{linkedIn}</div></a>
+            <a href="https://github.com/vineetvk01" target="_blank" rel="noopener noreferrer"><div id="gitHub">{gitHub}</div></a>
                 <div id="resume">{resume}</div>
             </div>): ''}
             

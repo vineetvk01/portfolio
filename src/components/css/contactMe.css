@@ -72,7 +72,7 @@ input[type=submit]:hover {
     margin-left: 30vw;
 }
 
-.social-media-list > div{
+.social-media-list div{
     float:left;
     font-size: 2em;
     margin: 0 0.2em;

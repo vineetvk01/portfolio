@@ -106,7 +106,7 @@ export default function Projects() {
                             from={{ x: '0%' }}
                             to={{ x: '-65%' }}
                         >
-                            <div class="experience">
+                            <div class="experience" id="experience-section">
                                 <Company1 />
                                 <Company2 />
                                 <Company3 />

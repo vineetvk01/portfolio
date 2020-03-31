@@ -41,7 +41,7 @@ export default function Projects() {
     const screenWidth = window.screen.width;
     if (screenWidth < 768) {
         return (
-            <div className="box" style={{ height: 'auto' }}>
+            <div id="projects" className="box" style={{ height: 'auto' }}>
                 <h4 class="head-mobile">PROJECTS</h4>
                 <Project1 />
                 <Project2 />
@@ -65,7 +65,7 @@ export default function Projects() {
                             from={{ x: '0%' }}
                             to={{ x: '-35%' }}
                         >
-                            <div class="experience">
+                            <div class="experience" id="project-section">
                                 <Project1 />
                                 <Project2 />
                             </div>
