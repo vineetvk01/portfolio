@@ -14,23 +14,19 @@ import ContactMe from './components/ContactMe';
 
 class App extends React.Component {
 
-  componentDidMount() {
-  }
-
   render() {
+    const screenWidth = window.screen.width;
     return (
       <div className="App">
-        
+
         <Header />
         <Navigation />
-        <SocialMedia />
+        {screenWidth > 768 ? <SocialMedia /> :''}
         <main>
-          
-            <Home />
-            <Experience />
-            <Projects />
-            {/* <Skills /> */}
-          
+          <Home />
+          <Experience />
+          <Projects />
+          {/* <Skills /> */}
           <ContactMe />
         </main>
 

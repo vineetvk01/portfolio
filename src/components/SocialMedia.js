@@ -10,6 +10,7 @@ import { faGithubSquare } from '@fortawesome/free-brands-svg-icons'
 import { faTwitterSquare } from '@fortawesome/free-brands-svg-icons'
 
 export default class SocialMedia extends React.Component {
+    
 
     render() {
         const linkedIn = <FontAwesomeIcon icon={faLinkedin} />
@@ -18,7 +19,7 @@ export default class SocialMedia extends React.Component {
         const facebook = <FontAwesomeIcon icon={faFacebookSquare} />
         const instagram = <FontAwesomeIcon icon={faInstagram} />
         const twitter = <FontAwesomeIcon icon={faTwitterSquare} />
-
+        
         return (
         <div id="sideBar">
             <a href="https://www.linkedin.com/in/vineetsrivastav/" target="_blank" rel="noopener noreferrer"><div className="icon" id="linkedIn">{linkedIn}</div></a><br/>

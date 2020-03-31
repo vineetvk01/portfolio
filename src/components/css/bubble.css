@@ -13,6 +13,12 @@
     position: relative;
 }
 
+@media only screen and (max-width: 768px) {
+    .speech-bubble-ds {
+        width: 58vw;
+    }
+}
+
 .speech-bubble-ds p {
     margin-bottom: 10px;
     color: #333;

@@ -15,6 +15,13 @@
     margin:5%;
 }
 
+@media only screen and (max-width: 768px) {
+    .formContainer{
+        float: none;
+        width: auto;
+    }
+}
+
 input[type=text], select, textarea {
     width: 100%;
     padding: 12px 20px;
@@ -44,4 +51,29 @@ input[type=submit]:hover {
     width: 20%;
     margin-top: 40vh;
     margin-left: 5vw;
+}
+
+@media only screen and (max-width: 768px) {
+    #messageWrite{
+        z-index: 0;
+        position: block;
+        width: 20%;
+        margin-top: 10vh;
+        margin-left: 35vw;
+    }
+}
+
+.social-media-list{
+    z-index: 0;
+    display: block;
+    width: 100%;
+    margin: 30px;
+    margin-top: 25vh;
+    margin-left: 30vw;
+}
+
+.social-media-list > div{
+    float:left;
+    font-size: 2em;
+    margin: 0 0.2em;
 }

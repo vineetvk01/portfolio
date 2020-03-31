@@ -68,34 +68,34 @@ export default class Home extends React.Component {
                             }
                         >
                             <Tween
-                                from={{ css: { opacity: "0", marginTop:"15%" } }}
-                                to={{css:{opacity:"1", marginTop:"0%"}}}
+                                from={{ css: { opacity: "0" } }}
+                                to={{css:{opacity:"1"}}}
                             />
                             <Tween />
                         </Timeline>
                         <Timeline
                             target={
-                                <div class="about">
+                                <div class="about" id="second-message">
                                     <Bubble message="... I'm a Software Developer." />
                                 </div>
                             }
                         >
                             <Tween
-                                from={{ css: { opacity: "0", marginTop:"15%" } }}
-                                to={{css:{opacity:"1", marginTop:"6%"}}}
+                                from={{ css: { opacity: "0" } }}
+                                to={{css:{opacity:"1"}}}
                             />
                             <Tween />
                         </Timeline>
                         <Timeline
                             target={
-                                <div class="about">
+                                <div class="about" id="third-message">
                                     <Bubble message="Scroll to know more... &#128521;" />
                                 </div>
                             }
                         >
                             <Tween
-                                from={{ css: { opacity: "0", marginTop:"14%" } }}
-                                to={{css:{opacity:"1", marginTop:"12%"}}}
+                                from={{ css: { opacity: "0"} }}
+                                to={{css:{opacity:"1"}}}
                             />
                             <Tween />
                         </Timeline>

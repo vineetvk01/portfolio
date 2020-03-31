@@ -21,6 +21,25 @@
     transform: rotate(15deg);
 }
 
+@media only screen and (max-width: 768px) {
+    #sideBar{
+        position: block;
+        margin-top: 0;
+        overflow: visible;
+        z-index: 0;
+        right:0;
+    }
+    .icon{
+        position: block;
+        font-size: 2em;
+        overflow: visible;
+        z-index: 0;
+        animation: slideFromRight 1s ease-out 0s;
+        -webkit-animation: slideFromRight 1s ease-out 0s;
+        transition: 1s;
+        
+    }
+}
 
 /* Ids In Order of social media on screen*/
 

@@ -59,6 +59,32 @@
     overflow: visible;
 }
 
+#second-message{
+    margin-top: 12vh;
+}
+
+#third-message{
+    margin-top: 24vh;
+}
+
+@media only screen and (max-width: 768px) {
+    .about{
+        font-size: 1.5em;
+        font-weight: 800;
+        position: absolute;
+        left: 15vw;
+        top: 35vh;
+        overflow: visible;
+    }
+    #second-message{
+        margin-top: 12vh;
+    }
+    
+    #third-message{
+        margin-top: 24vh;
+    }
+}
+
 #laptopScreen{
     position:absolute;
     margin: 1%;
@@ -67,6 +93,12 @@
 #laptopScreen img{
     width: 90vw;
     height: 95vh;
+}
+
+@media only screen and (max-width: 768px) {
+    #laptopScreen img{
+        height: 87vh;
+    }
 }
 
 #coloumn1{
