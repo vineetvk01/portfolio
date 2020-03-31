@@ -11,21 +11,19 @@ const check = <FontAwesomeIcon icon={faCheckCircle} style={{ color: "#4b8b3b" }}
 
 const Company1 = (props) => {
     return (
-        <Company cid="company1" logo='./images/experience/zohomdm.png' gif='./images/experience/MDM_Home.gif'>
+        <Company cid="company1" logo='./images/experience/igdm.png' gif='./images/experience/igdm.gif'>
             <div class="content">
-                <h5 class="companyInfo">ManageEngine crafts comprehensive IT management software for all your business needs.</h5>
+                <h5 class="companyInfo">Open source Electron messaging application for supporting Instagram Direct message on Mac/Pc/Linux.</h5>
                 <ul class="company-point">
-                    <li>{check} Developed Oauth2.0 Framework for the team to maintain hustle free
-authentication with various other services including internal Zoho services. </li>
-                    <li>{check} Developed Manage Engine’s integration app using JavaScript and Rest API
-between services for platforms like JIRA, Zendesk </li>
-                    <li>{check} Worked on various Directory services like AZURE AD, Microsoft’s OPAD, Okta, Ping and ZOHO Directory </li>
+                    <li>{check} Solved Bugs many UI related bugs in the application.</li>
+                    <li>{check} Fixed Two Factor Authentication issues happening with instagram in the application.</li>
+                    <li>{check} Migrated the application to the latest Instagram Apis in order to function properly.</li>
                 </ul>
                 <ul class="languages">
-                    <li><img src="./images/languages/java.svg" class="language" /></li>
-                    <li><img src="./images/languages/javascript.svg" class="language" /></li>
-                    <li><img src="./images/languages/html5.svg" class="language" /></li>
-                    <li><img src="./images/languages/css3.svg" class="language" /></li>
+                    <li><img src="./images/languages/javascript.svg" class="language" alt="javascript" /></li>
+                    <li><img src="./images/languages/electronjs.svg" class="language" alt="electron"/></li>
+                    <li><img src="./images/languages/html5.svg" class="language" alt="html5" /></li>
+                    <li><img src="./images/languages/css3.svg" class="language" alt="css3"/></li>
                 </ul>
             </div>
         </Company>
@@ -45,10 +43,10 @@ between services for platforms like JIRA, Zendesk </li>
                     <li>{check} Worked on various Directory services like AZURE AD, Microsoft’s OPAD, Okta, Ping and ZOHO Directory </li>
                 </ul>
                 <ul class="languages">
-                    <li><img src="./images/languages/java.svg" class="language" /></li>
-                    <li><img src="./images/languages/javascript.svg" class="language" /></li>
-                    <li><img src="./images/languages/html5.svg" class="language" /></li>
-                    <li><img src="./images/languages/css3.svg" class="language" /></li>
+                    <li><img src="./images/languages/java.svg" class="language" alt="java"/></li>
+                    <li><img src="./images/languages/javascript.svg" class="language" alt="js"/></li>
+                    <li><img src="./images/languages/html5.svg" class="language" alt="html"/></li>
+                    <li><img src="./images/languages/css3.svg" class="language" alt="css"/></li>
                 </ul>
             </div>
         </Company>
@@ -68,10 +66,10 @@ business logic. </li>
 framework) </li>
                 </ul>
                 <ul>
-                    <li><img src="./images/languages/spring-3.svg" class="language" /></li>
-                    <li><img src="./images/languages/javascript.svg" class="language" /></li>
-                    <li><img src="./images/languages/html5.svg" class="language" /></li>
-                    <li><img src="./images/languages/css3.svg" class="language" /></li>
+                    <li><img src="./images/languages/spring-3.svg" class="language" alt="spring"/></li>
+                    <li><img src="./images/languages/javascript.svg" class="language" alt="js"/></li>
+                    <li><img src="./images/languages/html5.svg" class="language" alt="html"/></li>
+                    <li><img src="./images/languages/css3.svg" class="language" alt="css"/></li>
                 </ul>
             </div>
         </Company>

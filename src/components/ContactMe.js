@@ -1,6 +1,5 @@
 import React from 'react';
-import SocialMedia from './SocialMedia'
-import './css/contactMe.css'
+import './css/contactMe.css';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
@@ -18,14 +17,14 @@ export default function ContactMe() {
         <div id="contactMe" className="box">
             <h1>Reach Out to Me !</h1>
             <div className="formContainer">
-                <form>
+                <form action="mailto:vineetvk01@gmail.com" method="post" enctype="text/plain">
                     <input type="text" name="name" placeholder="Name (Required)" />
                     <input type="text" name="email" placeholder="Email (Required)" />
                     <textarea style={{"height":"200px"}} name="message" placeholder="Message (Required)" ></textarea>
                     <input type="submit" value="Ping Me now !" />
                 </form>
             </div>
-            <img id="messageWrite" src="./images/notes.svg" />
+            <img id="messageWrite" src="./images/notes.svg" alt="notes" />
             {screenWidth < 768 ? (<div class="social-media-list">
             <a href="https://www.linkedin.com/in/vineetsrivastav/" target="_blank" rel="noopener noreferrer"><div id="linkedIn">{linkedIn}</div></a>
             <a href="https://github.com/vineetvk01" target="_blank" rel="noopener noreferrer"><div id="gitHub">{gitHub}</div></a>

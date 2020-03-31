@@ -10,9 +10,9 @@ const Project1 = (props) => {
             <div class="content">
                 <h5 class="projectInfo">ManageEngine crafts comprehensive IT management software for all your business needs.</h5>
                 <ul class="languages">
-                    <li><img src="./images/languages/javascript.svg" class="language" /></li>
-                    <li><img src="./images/languages/html5.svg" class="language" /></li>
-                    <li><img src="./images/languages/css3.svg" class="language" /></li>
+                    <li><img src="./images/languages/javascript.svg" class="language" alt="js" /></li>
+                    <li><img src="./images/languages/html5.svg" class="language"  alt="html5"/></li>
+                    <li><img src="./images/languages/css3.svg" class="language" alt="css" /></li>
                 </ul>
             </div>
         </Company>
@@ -25,12 +25,12 @@ const Project2 = (props) => {
             <div class="content">
                 <h5 class="projectInfo">A platform to share college notes between staff and college students.</h5>
                 <ul class="languages">
-                    <li><img src="./images/languages/php.svg" class="language" /></li>
-                    <li><img src="./images/languages/jquery.svg" class="language" /></li>
-                    <li><img src="./images/languages/javascript.svg" class="language" /></li>
-                    <li><img src="./images/languages/html5.svg" class="language" /></li>
-                    <li><img src="./images/languages/css3.svg" class="language" /></li>
-                    <li><img src="./images/languages/mysql-5.svg" class="language" /></li>
+                    <li><img src="./images/languages/php.svg" class="language" alt="php" /></li>
+                    <li><img src="./images/languages/jquery.svg" class="language" alt="jquery"/></li>
+                    <li><img src="./images/languages/javascript.svg" class="language" alt="js"/></li>
+                    <li><img src="./images/languages/html5.svg" class="language" alt="html"/></li>
+                    <li><img src="./images/languages/css3.svg" class="language" alt="css"/></li>
+                    <li><img src="./images/languages/mysql-5.svg" class="language" alt="mysql"/></li>
                 </ul>
             </div>
         </Company>
