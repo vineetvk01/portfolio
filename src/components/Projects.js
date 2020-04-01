@@ -21,7 +21,7 @@ const Project1 = (props) => {
 
 const Project2 = (props) => {
     return (
-        <Company cid="company2" logo='./images/experience/zohomdm.png' gif="./images/experience/verticalned.png">
+        <Company cid="company2" logo='./images/experience/verticalnedlogo.png' gif="./images/experience/verticalned.png">
             <div class="content">
                 <h5 class="projectInfo">A platform to share college notes between staff and college students.</h5>
                 <ul class="languages">
