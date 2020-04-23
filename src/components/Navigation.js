@@ -21,8 +21,8 @@ export default function Navigation() {
         <button id="nav-button" onClick={()=>setOpen(!open)}>{(open)?Cross:Bars}</button>
         <ul className={(open)?'menu-open':'menu-closed'}>
             <li><a href="#welcome">Home</a></li>
-            <li><a href="#experience-section">Experience</a></li>
-            <li><a href="#project-section">Project</a></li>
+            {/* <li><a href="#experience-section">Experience</a></li> */}
+            {/* <li><a href="#project-section">Project</a></li> */}
             <li><a href="#contactMe">Contact</a></li>
         </ul>
         </nav>
